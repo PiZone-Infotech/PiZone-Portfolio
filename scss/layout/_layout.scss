@@ -1,0 +1,78 @@
+:root {
+    --background-color: #eaeaea;
+    --text-color: #333333;
+   --theme:#000000;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: var(--text-color);
+  }
+
+  a {
+    color: var($theme);
+  }
+
+html,
+body {
+    font-family: $font-primary;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+html {
+    position: relative;
+    font-family: $font-primary;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: $font-primary;
+    font-size: 16px;
+    line-height: 1.1;
+    font-weight: normal;
+    position: relative;
+    padding: 0 !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+a {
+    transition: .3s linear;
+    color: $link-color;
+    text-decoration: none !important;
+
+    &:hover,
+    &:focus {
+        text-decoration: none !important;
+        outline: none !important;
+        box-shadow: none;
+        color: $theme;
+        font-weight: 400;
+    }
+}
+
+footer {
+    position: relative;
+    background-image: url(/assets/img/wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+    height: 400px;
+    padding-bottom: 15px;
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    p {
+
+font-size: 35px;
+    }
+   @media (max-width:768px) {
+    height: 300px;
+    p {
+        font-size: 24px;
+    }
+   }
+}
